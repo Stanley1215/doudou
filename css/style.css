@@ -64,6 +64,7 @@ img{
 
 .header_under{
 	float: right;
+
 }
 
 .header_under li{
@@ -93,14 +94,17 @@ img{
 	display: block;
 	margin-top: 10px;
 	margin-left: 20px;
+	
 }	
 
 .logo{
 	float: left;
+	
 }
 
 .nav_ul{
 	float: right;
+	
 	
 }
 
@@ -115,10 +119,10 @@ img{
 	color: #00cc99;
 	font-weight: bold;
 	display: block;
-	height: 60px;
 	line-height: 60px;
 	font-family: "微軟正黑體";
 	padding-right: 20px;
+
 }
 
 .nav li a:hover{
@@ -133,8 +137,9 @@ img{
 
 .container{
 	margin-top: 50px;
-
 }
+
+
 .container li{
 	width:30.333333%;
 	margin-left: 1.5%;
@@ -162,6 +167,9 @@ img{
 	font-family: "微軟正黑體";
 }
 
+.clearfix{
+	clear: both;
+}
 
 @media(max-width: 767px){
 	.logo{
