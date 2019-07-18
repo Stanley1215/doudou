@@ -27,4 +27,49 @@ $(document).ready(function(){
 			$("html,body").animate({ scrollTop: 0 }, 700);
 		});
 
+		
+		$(window).scroll(function() {
+			$(".animated").each(function() {
+				var position = $(this).offset().top;
+				var scroll = $(window).scrollTop();
+				var windowHeight = $(window).height();
+				if (scroll > position - windowHeight) {
+					$(this).addClass('fadeIn');
+				}
+			});
+		});
+
+		$(window).scroll(function() {
+			var winTop = $(window).scrollTop();
+			if (winTop >= 30) {
+				$('body').addClass('fixed-nav');
+			} else {
+				$('body').removeClass('fixed-nav');
+			}
+		});
+
+		//   建案輪播
+		$(".main-hot").slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: false,
+			arrow: true,
+			dot: false,
+			responsive: [{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						arrow: false,
+					}
+				},
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
   });

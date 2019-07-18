@@ -174,27 +174,7 @@
 <script src="js/jssor.slider.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwsaE8YKy57s2V2Pp0Zc1YFK0DxbUZWgk&callback=initMap" type="text/javascript"></script>
 <script src="js/all.js"></script>
-    <script>
-        $(window).scroll(function() {
-            var winTop = $(window).scrollTop();
-            if (winTop >= 30) {
-                $('body').addClass('fixed-nav');
-            } else {
-                $('body').removeClass('fixed-nav');
-            }
-        });
-
-        $(window).scroll(function() {
-            $(".animated").each(function() {
-                var position = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > position - windowHeight) {
-                    $(this).addClass('fadeIn');
-                }
-            });
-        });
-    </script>
+    
 
 </body>
 
