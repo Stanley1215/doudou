@@ -1,51 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+	<title>943</title>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/all.css">
+
+	<style>
+		 @media (max-width:1024px){
+	.animated{
+		opacity: 1;
+		transform: translateY(0);
+	}
+  }
+		/*jssor slider loading skin spin css*/
+		.jssorl-009-spin img {
+			animation-name: jssorl-009-spin;
+			animation-duration: 1.6s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes jssorl-009-spin {
+			from {
+				transform: rotate(0deg);
+			}
+
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+
+
+		/*jssor slider arrow skin 051 css*/
+		.jssora051 {
+			display: block;
+			position: absolute;
+			cursor: pointer;
+		}
+
+		.jssora051 .a {
+			fill: none;
+			stroke: #fff;
+			stroke-width: 360;
+			stroke-miterlimit: 10;
+		}
+
+		.jssora051:hover {
+			opacity: .8;
+		}
+
+		.jssora051.jssora051dn {
+			opacity: .5;
+		}
+
+		.jssora051.jssora051ds {
+			opacity: .3;
+			pointer-events: none;
+		}
+	</style>
+
 </head>
+
 <body>
 	<div class="wrap">
-		<div class="header clearfix">
-				<ul class="header_under">
 
-					<li ><a class="fb" href="#"><img src="images/fb.png" alt="">&nbsp;粉絲團</a></li>
-					<li ><a class="twitter" href="#"><img src="images/twitter.png" alt="">&nbsp;追蹤我們</a></li>
-				</ul>
-		</div>
-		<div class="nav clearfix">
-				<h1 class="logo"><a href="#"></a></h1>
-				<ul class="nav_ul">
-					<li><a href="#">首頁</a></li>
-					<li><a href="#">課程介紹</a></li>
-					<li><a href="#">部落格</a></li>
-					<li><a href="#">聯絡我們</a></li>
-				</ul>
+		<div class="header">
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1920px;height:885px;overflow:hidden;visibility:hidden;">
+
+				<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1920px;height:885px;overflow:hidden;">
+					<div>
+						<a href="#"><img data-u="image" src="images/index01.jpg" /></a>
+					</div>
+					<div>
+						<a href="#"><img data-u="image" src="images/index03.jpg" /></a>
+					</div>
+					<div>
+						<a href="#"><img data-u="image" src="images/index01.jpg" /></a>
+					</div>
+				</div>
+
+
+				<!-- Arrow Navigator -->
+				<div data-u="arrowleft" class="jssora051" style="width:100px;height:100px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+					</svg>
+				</div>
+				<div data-u="arrowright" class="jssora051" style="width:100px;height:100px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+					</svg>
+				</div>
 			</div>
+			<script type="text/javascript">
+				jssor_1_slider_init();
+			</script>
+			<!-- #endregion Jssor Slider End -->
 
-		
-		<div class="container">
-			<ul class="clearfix">
-				<li>
-					<a href="#"><img src="images/feature-html5.png" alt=""></a>
-					<h4>HTML5基礎教學</h4>
-					<p>HTML5是HTML最新的修訂版本，由全球資訊網協會於2014年10月完成標準制定。目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。HTML5 的發展越來越邁向成熟，很多的應用已經逐漸出現在你我日常生活中了。</p>
-				</li>
-				<li>
-					<a href="#"><img src="images/feature-rwd.png" alt=""></a>
-					<h4>響應式網站設計</h4>
-					<p>響應式網頁設計(Responsive Web Design)簡稱RWD。2012年後被公認為是日後網頁設計開發技術的趨勢，網站使用CSS3，以百分比的方式以及彈性的畫面設計，在不同解析度下改變網頁頁面的佈局排版，讓不同的設備都可以正常瀏覽同一網站，提供最佳的視覺體驗，是個因移動平台的用戶大量增加而想出的一個對應方法。</p>
-				</li>
-				<li>
-					<a href="#"><img src="images/feature-jquery.png" alt=""></a>
-					<h4>jQUERY實戰教學</h4>
-					<p>jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML與JavaScript之間的操作。由約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出第一個版本。目前是由Dave Methvin領導的開發團隊進行開發。全球前10,000個存取最高的網站中，有65%使用了jQuery，是目前最受歡迎的JavaScript函式庫</p>
-				</li>
-			</ul>
+		</div>
+
+		<div class="headline">
+			<div class="headline-inner">
+				<div class="headline-text">
+					<p class="hot-title">Hot-case</p>
+					<h4>熱銷個案</h4>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-bg">
+				<div class="nav container">
+					<h1 class="logo"><a href="index.php"></a>
+					</h1>
+					<ul class="menu d-flex">
+						<li><a href="about.html#about_Deng">關於登陽</a>
+						
+						</li>
+						<li class="dropdown"><a href="#">最新消息</a>
+						<span><i class="fas fa-caret-down"></i></span>
+							<ul class="dropdown-open">
+								<li><a href="news.php#news-info">最新消息</a></li>
+								<li><a href="activity.php#act">媒體報導</a></li>
+							</ul>
+						</li>
+						<li><a href="craft.html#profession">專業工法</a></li>
+						<li><a href="hot-case.php#popular">熱銷個案</a></li>
+						<li><a href="performance.php#display">業績大賞</a></li>
+						<li class="dropdown"><a href="#">客戶服務</a>
+						<span><i class="fas fa-caret-down"></i></span>
+							<ul class="dropdown-open">
+								<li><a href="login.php#work-login">工程進度</a></li>
+								<li><a href="contact_us.php#contact">聯絡登陽</a></li>
+							</ul>
+						</li>
+						<li class="social">
+							<a href="https://zh-tw.facebook.com/DENGYANG88/" target="_blank" class="icon-fb"><img src="images/icon_fb.png"></a>
+							<a href="#" class="icon-line"><img src="images/icon_line.png"></a>
+							</li>
+					</ul>
+					<a href="#" class="showmenu"><i class="fas fa-bars"></i></a>
+					<a href="https://zh-tw.facebook.com/DENGYANG88/" target="_blank" class="icon-fb"><img src="images/icon_fb.png" alt=""></a>
+					<a href="#" class="icon-line"><img src="images/icon_line.png" alt=""></a>
+				</div>
+			</div>
+		<!-- 列表一次顯示3個建案，個別依次輪播 -->
+		<div class="main-hot container d-flex animated">
+			<div class="hot-case">
+				<div class="hot-case-item">
+					<a href="hot-case-pages.php#case"><img src="images/hot01.jpg" alt="hot-case1"></a>
+
+					<div class="hot-text">
+						<p class="v-center">2014 登陽聽河</p>
+						<div class="circle v-center"><a href="hot-case-pages.php#case">VIEW</a></div>
+						<span class="btn-detail v-center"><a href="hot-case-pages.php#case">MORE</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="hot-case">
+				<div class="hot-case-item">
+					<a href="hot-case-pages.php#case"><img src="images/hot01.jpg" alt="hot-case1"></a>
+
+
+					<div class="hot-text">
+						<p class="v-center">2014 登陽聽河</p>
+						<div class="circle v-center"><a href="hot-case-pages.php#case">VIEW</a></div>
+						<span class="btn-detail v-center"><a href="hot-case-pages.php#case">MORE</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="hot-case">
+				<div class="hot-case-item">
+					<a href="hot-case-pages.php#case"><img src="images/hot02.jpg" alt="hot-case2"></a>
+
+					<div class="hot-text">
+						<p class="v-center">2010 登陽為美</p>
+						<div class="circle v-center"><a href="hot-case-pages.php#case">VIEW</a></div>
+						<span class="btn-detail v-center"><a href="hot-case-pages.php#case">MORE</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="hot-case">
+				<div class="hot-case-item">
+					<a href="hot-case-pages.php#case"><img src="images/hot03.jpg" alt="hot-case3"></a>
+
+					<div class="hot-text">
+						<p class="v-center">2012 登陽涵境</p>
+						<div class="circle v-center"><a href="hot-case-pages.php#case">VIEW</a></div>
+						<span class="btn-detail v-center"><a href="hot-case-pages.php#case">MORE</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 此區域為暫定，後續依客戶需求做修改 -->
+		<div class="box-images animated">
+			<img src="images/slogan.jpg">
+		</div>
+		<div class="headline">
+			<div class="headline-inner">
+				<div class="headline-text">
+					<p class="news-title">News</p>
+					<h4>最新消息</h4>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 列表一次顯示最新2則新聞 -->
+		<div class="news container animated">
+			<div class="news-list d-flex">
+				<div class="news-list-box">
+					<div class="news-list-item">
+						<a href="news-pages.php#news-info-pages"><img src="images/new01.jpg" alt="new-img1"></a>
+					</div>
+					<div class="news-list-outer">
+						<div class="news-list-inner">
+							<div class="news-date">2018年11月13日</div>
+							<div class="news-text"><a href="news-pages.php#news-info-pages">登陽春賞 近捷運GO站</a></div>
+						</div>
+						<div class="news-btn">
+							<a href="news-pages.php#news-info-pages">READ MORE</a>
+							<span><img src="images/btn-turn.png" alt="arrow"></span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-box">
+					<div class="news-list-item">
+						<a href="news-pages.php#news-info-pages"><img src="images/new02.jpg" alt="new-img2"></a>
+					</div>
+					<div class="news-list-outer">
+						<div class="news-list-inner">
+							<div class="news-date">2018年11月13日</div>
+							<div class="news-text"><a href="news-pages.php#news-info-pages">登陽春賞 近捷運GO站</a></div>
+						</div>
+						<div class="news-btn"><a href="news-pages.php#news-info-pages">READ MORE</a>
+							<span><img src="images/btn-turn.png" alt="arrow"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headline">
+			<div class="headline-inner">
+				<div class="headline-text">
+					<p class="contact-title">Contact</p>
+					<h4>聯絡我們</h4>
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+		<div class="contact animated">
+			<div class="above"></div>
+			<div class="down"><img src="images/icon_down.png"></div>
+			<div class="btn v-center"><a href="contact_us.php#contact">READ MORE</a></div>
+		</div>
+		<div class="footer">
+			<div class="container show">
+				<div class="info">
+					<h2 class="logo"><a href="index.php"></a></h2>
+					<p>ADD:408台中市南屯區大墩南路166號</p>
+					<p>TEL:(+886)-4-2475-8678</p>
+				</div>
+				<ul class="f-menu d-flex">
+					<li><a href="about.php#about_Deng">關於登陽</a>
+					</li>
+					<li>
+						<a href="news.php#news-info">最新消息</a>
+						<ul>
+							<li><a href="news.php#news-info">最新消息</a></li>
+							<li><a href="activity.php#act">媒體報導</a></li>
+						</ul>
+					</li>
+					<li><a href="craft.php#profession">專業工法</a></li>
+					<li><a href="hot-case.php#popular">熱銷個案</a></li>
+					<li><a href="performance.php#display">業績大賞</a></li>
+					<li>
+						<a href="contact_us.php#contact">客戶服務</a>
+						<ul>
+							<li><a href="login.php#work-login">工程進度</a></li>
+							<li><a href="contact_us.php#contact">聯絡登陽</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="top">
+					<a href="#"><img src="images/top.png" alt=""></a>
+				</div>
+			</div>
+			<div class="copy-bottom d-flex">
+				<p>©2018 DENG YANG CONSTRUCTION CO.,LTD.</p>
+				<span class="icon-fb"><a href="https://zh-tw.facebook.com/DENGYANG88/" target="_blank"><img src="images/icon_fb.png" alt=""></a></span>
+				<span class="icon-line"><a href="#"><img src="images/icon_line.png" alt=""></a></span>
+			</div>
 		</div>
 	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.tinyMap.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="js/jssor.slider.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwsaE8YKy57s2V2Pp0Zc1YFK0DxbUZWgk&callback=initMap" type="text/javascript"></script>
+<script src="js/all.js"></script>
+	<script>
+		$(window).scroll(function() {
+			var winTop = $(window).scrollTop();
+			if (winTop >= 30) {
+				$('body').addClass('fixed-nav');
+			} else {
+				$('body').removeClass('fixed-nav');
+			}
+		});
+
+		//   建案輪播
+		$(".main-hot").slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: false,
+			arrow: true,
+			dot: false,
+			responsive: [{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						arrow: false,
+					}
+				},
+				{
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+		$(window).scroll(function() {
+				$(".animated").each(function() {
+				var position = $(this).offset().top;
+				var scroll = $(window).scrollTop();
+				var windowHeight = $(window).height();
+				if (scroll > position - windowHeight) {
+					$(this).addClass('fadeIn');
+				}
+			});
+		});
+
+		var jssor_1_SlideshowTransitions = [{
+			$Duration: 800,
+			$Opacity: 2
+		}];
+
+		var jssor_1_options = {
+			$AutoPlay: 0,
+			$SlideshowOptions: {
+				$Class: $JssorSlideshowRunner$,
+				$Transitions: jssor_1_SlideshowTransitions,
+				$TransitionsOrder: 1
+			},
+			$ArrowNavigatorOptions: {
+				$Class: $JssorArrowNavigator$
+			},
+			$BulletNavigatorOptions: {
+				$Class: $JssorBulletNavigator$
+			}
+		};
+
+		var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+		/*#region responsive code begin*/
+
+		var MAX_WIDTH = 1920;
+
+		function ScaleSlider() {
+			var containerElement = jssor_1_slider.$Elmt.parentNode;
+			var containerWidth = containerElement.clientWidth;
+
+			if (containerWidth) {
+
+				var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+				jssor_1_slider.$ScaleWidth(expectedWidth);
+			} else {
+				window.setTimeout(ScaleSlider, 30);
+			}
+		}
+
+		ScaleSlider();
+
+		$(window).bind("load", ScaleSlider);
+		$(window).bind("resize", ScaleSlider);
+		$(window).bind("orientationchange", ScaleSlider);
+		/*#endregion responsive code end*/
+	</script>
 
 </body>
+
 </html>
