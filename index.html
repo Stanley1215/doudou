@@ -1,51 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新手入門網頁設計</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="wrap">
-		<div class="header clearfix">
-				<ul class="header_under">
+    <header class="main-header">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="images/logo.png">
+          </a>
+          <nav class="main-nav">
+            <a href="#">基礎課程系列</a>
+            <a href="#">進階網頁課程系列</a>
+            <a href="#">CSS系列</a>
+            <a href="#">RWD系列</a>
+          </nav>
+          <form class="header-search">
+            <input type="search" placeholder="Google">
+            <button><i class="fas fa-search"></i></button>
+          </form>
+          <input type="checkbox" name="" id="side-menu-switch">
 
-					<li ><a class="fb" href="#"><img src="images/fb.png" alt="">&nbsp;粉絲團</a></li>
-					<li ><a class="twitter" href="#"><img src="images/twitter.png" alt="">&nbsp;追蹤我們</a></li>
-				</ul>
-		</div>
-		<div class="nav clearfix">
-				<h1 class="logo"><a href="#"></a></h1>
-				<ul class="nav_ul">
-					<li><a href="#">首頁</a></li>
-					<li><a href="#">課程介紹</a></li>
-					<li><a href="#">部落格</a></li>
-					<li><a href="#">聯絡我們</a></li>
-				</ul>
-			</div>
+          <div class="side-menu">
+            <form>
+              <input type="search" placeholder="請輸入關鍵字">
+              
+              <button>
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <ul class="nav">
+              <li>
+                <a href="#"><i class="fas fa-users"></i>網頁設計專攻班</a>
+                <ul>
+                  <li>
+                    <a href="#">新手入門都能懂的網頁設計入門</a>
+                    <ul>
+                      
+                        <li><a href="#">DAY1</a> </li>
+                        <li><a href="#">DAY2</a> </li>
+                       <li> <a href="#">DAY3</a> </li>
+                     
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">新手入門都能懂的 CSS 選取器</a>
+                    <ul>
+                      <li><a href="#">DAY1</a> </li>
+                        <li><a href="#">DAY2</a> </li>
+                       <li> <a href="#">DAY3</a> </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">新手入門都能懂的這個網頁畫面怎麼切</a>
+                    <ul>
+                      <li><a href="#">DAY1</a> </li>
+                        <li><a href="#">DAY2</a> </li>
+                       <li> <a href="#">DAY3</a> </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">連續30天的超實務網頁設計的垂直置中教學</a>
+                    <ul>
+                     <li><a href="#">DAY1</a> </li>
+                        <li><a href="#">DAY2</a> </li>
+                       <li> <a href="#">DAY3</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            <li>    <a href="#"><i class="fas fa-user-friends"></i>新手入門基礎班</a></li>
+            <li>    <a href="#"><i class="fas fa-users-cog"></i>RWD 超簡單</a></li>
+            <li>    <a href="#"><i class="fas fa-user-tag"></i>基礎網頁設計專攻班</a></li>
+            <li>    <a href="#"><i class="fas fa-user-shield"></i>新手基礎切版</a></li>
+              
+            </ul>
+            <label for="side-menu-switch">
+              <i class="fas fa-chevron-right"></i>
+            </label>
+          </div>
+        </div>
+      </header>
+      <div class="banner">
+        <div class="container">
+          <div class="banner-txt">
+            <h1>新手入門都能懂的
+            <small>這個網頁畫面怎麼切</small>
+            </h1>
+            <h2>圖文滿版區塊</h2>
+            <p>這個畫面實在常見，在各種樣板網站可以說是小試身手，新手切不出來實在說不過去阿</p>
+          </div>
+        </div>
+      </div>
 
-		
-		<div class="container">
-			<ul class="clearfix">
-				<li>
-					<a href="#"><img src="images/feature-html5.png" alt=""></a>
-					<h4>HTML5基礎教學</h4>
-					<p>HTML5是HTML最新的修訂版本，由全球資訊網協會於2014年10月完成標準制定。目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。HTML5 的發展越來越邁向成熟，很多的應用已經逐漸出現在你我日常生活中了。</p>
-				</li>
-				<li>
-					<a href="#"><img src="images/feature-rwd.png" alt=""></a>
-					<h4>響應式網站設計</h4>
-					<p>響應式網頁設計(Responsive Web Design)簡稱RWD。2012年後被公認為是日後網頁設計開發技術的趨勢，網站使用CSS3，以百分比的方式以及彈性的畫面設計，在不同解析度下改變網頁頁面的佈局排版，讓不同的設備都可以正常瀏覽同一網站，提供最佳的視覺體驗，是個因移動平台的用戶大量增加而想出的一個對應方法。</p>
-				</li>
-				<li>
-					<a href="#"><img src="images/feature-jquery.png" alt=""></a>
-					<h4>jQUERY實戰教學</h4>
-					<p>jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML與JavaScript之間的操作。由約翰·雷西格（John Resig）在2006年1月的BarCamp NYC上釋出第一個版本。目前是由Dave Methvin領導的開發團隊進行開發。全球前10,000個存取最高的網站中，有65%使用了jQuery，是目前最受歡迎的JavaScript函式庫</p>
-				</li>
-			</ul>
-		</div>
-	</div>
+      <div class="title-wrap">
+        <div class="container">
+          <h1>新手基礎免費課程系列</h1>
+          <div class="txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia exercitationem magni officiis velit, omnis eos deserunt cumque quisquam amet corrupti ratione atque molestias consequuntur blanditiis illo iste quasi ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia exercitationem magni officiis velit, omnis eos deserunt cumque quisquam amet corrupti ratione atque molestias consequuntur blanditiis illo iste quasi ea?</p>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+      <div class="section2">
+        <div class="item">
+          <div class="icon">
+            <i class="fa fa-gavel"></i>
+          </div>
+          <div class="txt">
+            <h3>新手基礎班網頁入門</h3>
+            <p>新手網頁入門是一門強度不低的入門課程，內容彌補了新手中深度不足的地方，但也考驗各偽的自主訓練與耐心，只要能紮實的把訓練做好與消化，能力立馬提升。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+          <div class="txt">
+            <h3>新手基礎班網頁入門</h3>
+            <p>新手網頁入門是一門強度不低的入門課程，內容彌補了新手中深度不足的地方，但也考驗各偽的自主訓練與耐心，只要能紮實的把訓練做好與消化，能力立馬提升。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <i class="fas fa-bell"></i>
+          </div>
+          <div class="txt">
+            <h3>新手基礎班網頁入門</h3>
+            <p>新手網頁入門是一門強度不低的入門課程，內容彌補了新手中深度不足的地方，但也考驗各偽的自主訓練與耐心，只要能紮實的把訓練做好與消化，能力立馬提升。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section3">
+      <div class="title-wrap">
+        <div class="container">
+          <h1>新手見證</h1>
+          
+          <div class="card-wrap">
+              <div class="items">
+                <div class="pic">
+                  <img src="images/001.jpg" ></div>
+                <div class="text">
+                 <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+               <div class="items">
+                <div class="pic"><img src="images/002.jpg" ></div>
+                 <div class="text">
+                  <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+               <div class="items">
+                <div class="pic"><img src="images/003.jpg" ></div>
+                 <div class="text">
+                  <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          
+        
+      </div>
+      <div class="title-wrap">
+        <div class="container">
+          <h1>新手入門網頁課程系列</h1>
+          <div class="txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia exercitationem magni officiis velit, omnis eos deserunt cumque quisquam amet corrupti ratione atque molestias consequuntur blanditiis illo iste quasi ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. At mollitia exercitationem magni officiis velit, omnis eos deserunt cumque quisquam amet corrupti ratione atque molestias consequuntur blanditiis illo iste quasi ea?</p>
+          </div>
+          <div class="card-wrap">
+            <div class="item-box">
+              <img src="images/1.png" alt="">
+              <div class="txt">
+                <h2>HTML</h2>
+                <p>超文本標記語言是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程序的使用者介面。</p>
+              </div>
+            </div>
+            <div class="item-box">
+              <img src="images/2.png" alt="">
+              <div class="txt">
+                <h2>CSS3</h2>
+                <p>層疊樣式表是一種用來為結構化文件添加樣式的電腦語言，由W3C定義和維護。目前最新版本是CSS2.1，為W3C的推薦標準。CSS3現在已被大部分現代瀏覽器支援。</p>
+              </div>
+            </div>
+            <div class="item-box">
+              <img src="images/3.png" alt="">
+              <div class="txt">
+                <h2>Javascript</h2>
+                <p>JavaScript是一種進階的程式語言。JavaScript是一門基於原型、函式先行的語言，是一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。</p>
+              </div>
+            </div>
+          </div>
+          
+
+            </div>
+          
+        
+      </div>
+      <div class="title-wrap">
+        <div class="container">
+          <h1>受虐者見證</h1>
+          <div class="card-wrap">
+              <div class="items">
+                <div class="pic">
+                  <img src="images/01.jpg" ></div>
+                <div class="text">
+                 <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+               <div class="items">
+                <div class="pic"><img src="images/02.jpg" ></div>
+                 <div class="text">
+                  <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+               <div class="items">
+                <div class="pic"><img src="images/03.jpg" ></div>
+                 <div class="text">
+                  <h2>新手都能懂得網頁設計入門</h2>
+                  <p>年度最佳網頁設計入門教學影片，輕鬆學會網頁製作，原始碼原來如此有趣阿</p>
+                   <a href="#" class="btn">more</a>
+                </div>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+      <div class="main-footer">
+        <div class="container">
+          <div class="footer-item">
+            <h4>關於新手網頁設計入門</h4>
+            <nav>
+              <a href="#"><i class="fa fa-angle-right"></i>課程目標</a>
+              <a href="#"><i class="fa fa-angle-right"></i>辦學理念</a>
+              <a href="#"><i class="fa fa-angle-right"></i>課程宗旨</a>
+            </nav>
+          </div>
+          <div class="footer-item">
+            <h4>課程列表</h4>
+            <nav>
+              <a href="#"><i class="fa fa-angle-right"></i>新手入門班</a>
+              <a href="#"><i class="fa fa-angle-right"></i>進階網頁班</a>
+              <a href="#"><i class="fa fa-angle-right"></i>CSS3專攻班</a>
+              <a href="#"><i class="fa fa-angle-right"></i>Bootstrap神人班</a>
+      
+            </nav>
+          </div>
+          <div class="footer-item">
+            <h4>服務項目</h4>
+            <nav>
+              <a href="#"><i class="fa fa-angle-right"></i>平面設計</a>
+              <a href="#"><i class="fa fa-angle-right"></i>網站設計</a>
+              <a href="#"><i class="fa fa-angle-right"></i>Wordpress架站</a>
+            </nav>
+          </div>
+          <div class="footer-item footer-subs">
+            <h4>訂閱電子報</h4>
+            <form>
+              <input type="text" name="" id="">
+              <input type="submit" value="訂閱">
+            </form>
+          </div>
+          
+        </div>
+        <div class="copyright">
+          Copyright &copy; 2019 新手入門都懂的這個網頁畫面怎麼切
+        </div>
+      </div>
 
 </body>
 </html>
